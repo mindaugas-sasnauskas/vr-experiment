@@ -1,0 +1,23 @@
+{
+    "name": "nw2r",
+    "version": "1.0.0",
+    "description": "ders",
+    "main": "indexh.html",
+    "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+	"peerjs": "0.3.10",
+	"express": "4.3.1",
+	"node-static": "0.7.6",
+	"ws": "0.4.25",
+	"underscore": "1.4.4",
+	"gl-matrix": "2.2.1"
+    },
+    "webkit": {
+	"plugin": true,
+	"java": true
+    },
+    "author": "qaz",
+    "license": "mit"
+}

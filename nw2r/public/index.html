@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>r2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+        <style>
+
+        </style>
+
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div id="container-left" class="container-left" style="    height: 100%;">
+		<span class="err"></span>
+                <div class="container-in-control" >
+		    <video class="client-video1" id="client-video1" autoplay></video>
+		    <!--<img src="cursor.png" class="cursor cursor-left" alt=""/>-->
+		</div>
+            </div>
+            <div  id="container-right"  class="container-right" style="    height: 100%;">
+		<div class="container-in-control">
+                    <video class="client-video1" id="client-video2" autoplay></video>
+                </div>
+		<!--<img src="cursor.png" class="cursor cursor-right" alt=""/>-->
+
+            </div>
+        </div>
+	<span id="my-id">...</span>
+        <!--<span id="test">...</span>-->
+        <div id="examplea" onclick="fullscreen()">FS</div>
+        <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+        <script src="app-client-ws.js"></script>
+        <script>
+
+
+
+	    var container;
+	    container = document.getElementById('container');
+	    function fullscreen() {
+		if (container.requestFullscreen) {
+		    container.requestFullscreen();
+		} else if (container.msRequestFullscreen) {
+		    container.msRequestFullscreen();
+		} else if (container.mozRequestFullScreen) {
+		    container.mozRequestFullScreen();
+		} else if (container.webkitRequestFullscreen) {
+		    container.webkitRequestFullscreen();
+		} else if (container.webkitRequestFullScreen) {
+		    container.webkitRequestFullScreen();
+		}
+	    }
+        </script>
+    </body>
+</html>
